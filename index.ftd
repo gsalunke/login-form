@@ -244,9 +244,9 @@ It's used to define button size. It's `optional` property and default value is
 
 To use fastn button inside fastn projects try below methods as per requirement. 
 
-- [Using as `btn` alias](/alias/)
+- [Using as `btn` alias](alias/)
 
-- [Using import](/import/)
+- [Using import](import/)
 
 -- end: ds.doc-home
 
