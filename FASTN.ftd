@@ -15,4 +15,6 @@ favicon: /-/gsalunke.github.io/fastn-button/favicon.ico
 # Home: index.html
 
 - Overview: index.html
+- Using as `btn` alias: /alias/
+- Using import: /import/
 

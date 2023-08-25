@@ -6,6 +6,31 @@ current-package: gsalunke.github.io/fastn-button
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
+-- ds.header: Demo
+
+-- ds.output:
+colors: $ftd.default-colors
+
+-- demo:
+
+-- button: TEXT
+variant: text
+link: index.html
+
+-- button: Contained
+variant: contained
+link: index.html
+
+-- button: Outlined
+variant: outlined
+link: index.html
+
+-- end: demo
+
+-- end: ds.output
+
+-- ds.markdown:
+
 Buttons communicate actions that users can take. They are typically placed
 throughout your UI, in places like:
 
@@ -16,6 +41,7 @@ throughout your UI, in places like:
 
 These fastn buttons are inspired from [Matrrial UI](https://mui.com/material-ui/react-button/) 
 and uses fastn typography and color tokens. 
+
 
 
 -- ds.header: Basic Button
@@ -44,7 +70,7 @@ link: index.html
 -- ds.output:
 colors: $ftd.default-colors
 
--- demo: Medium size buttons
+-- demo: 
 
 -- button: TEXT
 variant: text
@@ -57,44 +83,6 @@ link: index.html
 -- button: Outlined
 variant: outlined
 link: index.html
-
--- end: demo
-
--- demo: Small size buttons
-
--- button: TEXT
-variant: text
-link: index.html
-size: small
-
--- button: Contained
-variant: contained
-link: index.html
-size: small
-
--- button: Outlined
-variant: outlined
-link: index.html
-size: small
-
--- end: demo
-
--- demo: Large size buttons
-
--- button: TEXT
-variant: text
-link: index.html
-size: large
-
--- button: Contained
-variant: contained
-link: index.html
-size: large
-
--- button: Outlined
-variant: outlined
-link: index.html
-size: large
 
 -- end: demo
 
@@ -245,6 +233,15 @@ It's used to define button size. It's `optional` property and default value is
 - `medium` - uses `$inherited.types.button-medium`
 
 - `large` - uses `$inherited.types.button-large`
+
+
+-- ds.header: How to use `fastn-button`?
+
+To use fastn button inside fastn projects try below methods as per requirement. 
+
+- [Using as `btn` alias](/alias/)
+
+- [Using import](/import/)
 
 -- end: ds.doc-home
 

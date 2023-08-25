@@ -23,6 +23,8 @@ These fastn buttons are inspired from [Matrrial UI](https://mui.com/material-ui/
 
 ### Like my work? connect with me on [Linkedin](https://www.linkedin.com/in/ganesh-s-891174ab/)
 
+## Follow me? [Linkedin](https://www.linkedin.com/in/ganesh-s-891174ab/)
+
 ## fastn Champions program
 
 [Click here](https://fastn.com/champion-program/) to learn how to became fastn champion.

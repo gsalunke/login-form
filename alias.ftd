@@ -1,0 +1,45 @@
+
+-- ds.doc-home: Button
+site-title: Challenge 1: Button
+github-url: https://github.com/gsalunke/fastn-button
+current-package: gsalunke.github.io/fastn-button
+
+-- ds.header: Using as `btn` alias inside `FASTN.ftd`
+
+If you're using fastn buttons on all `ftd` files of a fastn project, then don't
+import it inside every `ftd` file, just add `fastn alias` to fastn button
+dependency and auto import it, inside `FASTN.ftd` file.
+
+To create a fastn `btn` alias inside `FASTN.ftd` add its dependency inside
+`FASTN.ftd` file and `auto-import` it:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: gsalunke.github.io/fastn-button as btn
+
+\-- fastn.auto-import: btn
+
+-- ds.header: Using `btn` alias
+
+See below example to learn how to use `btn` alias of fastn button package.
+
+-- cb.code:
+lang: ftd
+
+\-- btn.button: TEXT
+variant: text
+link: index.html
+size: large
+
+\-- btn.button: Contained
+variant: contained
+link: index.html
+size: large
+
+\-- btn.button: Outlined
+variant: outlined
+link: index.html
+size: large
+
+-- end: ds.doc-home

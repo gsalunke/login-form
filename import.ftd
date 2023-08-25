@@ -1,0 +1,49 @@
+-- ds.doc-home: Button
+site-title: Challenge 1: Button
+github-url: https://github.com/gsalunke/fastn-button
+current-package: gsalunke.github.io/fastn-button
+
+-- ds.header: Using `import` inside a `ftd` file
+
+If not using fastn button on every `ftd` file then, add dependency inside
+`FASTN.ftd` file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: gsalunke.github.io/fastn-button
+
+-- ds.markdown:
+
+Now `import` fastn button inside `.ftd` file
+
+-- cb.code:
+lang: ftd
+
+\-- import: gsalunke.github.io/fastn-button
+
+-- ds.markdown:
+
+After importing fastn button inside `ftd` file, use it as shown below:
+
+Showing a sample usage:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn-button.button: TEXT
+variant: text
+link: index.html
+size: large
+
+\-- fastn-button.button: Contained
+variant: contained
+link: index.html
+size: large
+
+\-- fastn-button.button: Outlined
+variant: outlined
+link: index.html
+size: large
+
+-- end: ds.doc-home
