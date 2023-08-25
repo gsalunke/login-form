@@ -1,40 +1,293 @@
--- ds.page: Welcome to doc-site
+
+-- ds.doc-home: Button
+site-title: Challenge 1: Button
+github-url: https://github.com/gsalunke/fastn-button
+current-package: gsalunke.github.io/fastn-button
+
+Buttons allow users to take actions, and make choices, with a single tap.
+
+Buttons communicate actions that users can take. They are typically placed
+throughout your UI, in places like:
+
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+These fastn buttons are inspired from [Matrrial UI](https://mui.com/material-ui/react-button/) 
+and uses fastn typography and color tokens. 
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ds.header: Basic Button
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+The `Button` comes with three variants: text (default), contained, and outlined.
 
 
--- ds.h3: 🎯 Used by?
+-- cb.rendered: Example of basic button: default `medium` size
 
-Our all documentation sites uses this `doc-site` theme.
+-- cb.rendered.input:
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+\-- button: TEXT
+variant: text
+link: index.html
 
--- ds.h2: Learn fastn and become a pro?
+\-- button: Contained
+variant: contained
+link: index.html
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+\-- button: Outlined
+variant: outlined
+link: index.html
 
--- end: ds.page
+-- cb.rendered.output:
+
+-- ds.output:
+colors: $ftd.default-colors
+
+-- demo: 
+
+-- button: TEXT
+variant: text
+link: index.html
+
+-- button: Contained
+variant: contained
+link: index.html
+
+-- button: Outlined
+variant: outlined
+link: index.html
+
+-- end: demo
+
+-- end: ds.output
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: Example of basic button: `small` size
+
+-- cb.rendered.input:
+
+\-- button: TEXT
+variant: text
+link: index.html
+size: small
+
+\-- button: Contained
+variant: contained
+link: index.html
+size: small
+
+\-- button: Outlined
+variant: outlined
+link: index.html
+size: small
+
+-- cb.rendered.output:
+
+-- ds.output:
+colors: $ftd.default-colors
+
+-- demo:
+
+-- button: TEXT
+variant: text
+link: index.html
+size: small
+
+-- button: Contained
+variant: contained
+link: index.html
+size: small
+
+-- button: Outlined
+variant: outlined
+link: index.html
+size: small
+
+-- end: demo
+
+-- end: ds.output
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: Example of basic button: `large` size
+
+-- cb.rendered.input:
+
+\-- button: TEXT
+variant: text
+link: index.html
+size: large
+
+\-- button: Contained
+variant: contained
+link: index.html
+size: large
+
+\-- button: Outlined
+variant: outlined
+link: index.html
+size: large
+
+-- cb.rendered.output:
+
+-- ds.output:
+colors: $ftd.default-colors
+
+-- demo:
+
+-- button: TEXT
+variant: text
+link: index.html
+size: large
+
+-- button: Contained
+variant: contained
+link: index.html
+size: large
+
+-- button: Outlined
+variant: outlined
+link: index.html
+size: large
+
+-- end: demo
+
+-- end: ds.output
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- ds.header: Basic Button Properties:
+
+Below are details of all common properties of basic button.
+
+-- ds.component-property: `title`
+type: Caption (`required`)
+
+It's used to add title to all your button.
+
+-- ds.component-property: `variant`
+type: String (`required`)
+
+It's used to define variant of button. There are three(3) button variants:
+
+- text - button appears as a text, and on mouse over background color is shown.
+
+- contained - button appears as a contained button, with background color
+  `$inherited.colors.cta-primary.base`.
+
+- outlined - button outlined with `$inherited.colors.cta-primary.border`.
+
+-- ds.header: Additional Properties:
+
+Below are details of additional properties of quote components.
+
+-- ds.component-property: `link`
+type: String (`optional`)
+
+It's used to add `url` to button. If you wish to use fastn `$on-click$` event
+then don't add this property.
+
+-- ds.component-property: `size`
+type: String (`optional`)
+
+It's used to define button size. It's `optional` property and default value is
+`medium`, there are only three(3) sizes of button(`small`, `medium` and
+`large`), it uses below tokens from fastn typography according to its value:
+
+- `small` - uses `$inherited.types.button-small` 
+
+- `medium` - uses `$inherited.types.button-medium`
+
+- `large` - uses `$inherited.types.button-large`
+
+-- end: ds.doc-home
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption title:
+string variant:
+optional string link: 
+string size: medium
+boolean $hover: false
+
+-- ftd.column:
+padding-vertical.px: 5
+padding-horizontal.px: 15
+padding-vertical.px if { button.variant == "text" && button.variant == "contained"}: 6
+padding-horizontal.px if { button.variant == "text"}: 8
+padding-horizontal.px if { button.variant == "contained"}: 16
+background.solid if { button.variant == "contained" }: $inherited.colors.cta-primary.base
+background.solid if { button.variant == "contained" && button.hover }: $inherited.colors.cta-primary.hover
+border-width.px if { button.variant == "outlined" }: 1
+border-color if { button.variant == "outlined" && button.hover }: $inherited.colors.cta-primary.hover
+border-color if { button.variant == "outlined" }: $inherited.colors.border
+background.solid if { button.variant == "text" && button.hover }: $inherited.colors.cta-primary.pressed
+border-radius.px: 4
+link if { button.link != NULL }: $button.link
+$on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
+
+-- ftd.text: $button.title
+role: $inherited.types.button-small
+role if { button.size == "large" }: $inherited.types.button-large
+role if { button.size == "medium" }: $inherited.types.button-medium
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component demo:
+optional caption title:
+children buttons:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding.px: 24
+border-width.px: 1
+border-color: $inherited.colors.border
+
+-- ftd.text: $demo.title
+if: { demo.title != NULL }
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+padding-bottom.px: 8
+border-bottom-width.px: 1
+border-bottom-color: $inherited.colors.border
+margin-bottom.px: 24
+
+-- ftd.row:
+spacing.fixed.px: 16
+children: $demo.buttons
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: demo
