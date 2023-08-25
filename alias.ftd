@@ -4,6 +4,9 @@
 site-title: Challenge 1: Button
 github-url: https://github.com/gsalunke/fastn-button
 current-package: gsalunke.github.io/fastn-button
+document-title: fastn button for fastn websites. Use contained, outlined and text button created by gsalunke
+document-description: Simple, easy-to-use fastn buttons inspired by material-ui, mui. Change colours and typography effortlessly.
+document-image: https://raw.githubusercontent.com/gsalunke/fastn-button/main/.github/assets/fastn-button.png
 
 -- ds.header: Using as `btn` alias inside `FASTN.ftd`
 
