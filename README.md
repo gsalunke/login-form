@@ -41,8 +41,8 @@ Discover more of fastn here.
 ## Become a fastn Contributor
 
 1.  Finish the [Expander Crash Course](https://fastn.com/expander/)
-2.  Share your progress and ideas on [Discord](https://discord.gg/bucrdvptYd).
-3.  Let our team guide you on your contributor journey.
+2.  Share your progress and ideas on fastn [Discord](https://discord.gg/bucrdvptYd).
+3.  Let fastn team guide you on your contributor journey.
 
 ## Become a fastn-trailblazer
 
