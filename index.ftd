@@ -44,7 +44,7 @@ link: index.html
 -- ds.output:
 colors: $ftd.default-colors
 
--- demo: 
+-- demo: Medium size buttons
 
 -- button: TEXT
 variant: text
@@ -57,6 +57,44 @@ link: index.html
 -- button: Outlined
 variant: outlined
 link: index.html
+
+-- end: demo
+
+-- demo: Small size buttons
+
+-- button: TEXT
+variant: text
+link: index.html
+size: small
+
+-- button: Contained
+variant: contained
+link: index.html
+size: small
+
+-- button: Outlined
+variant: outlined
+link: index.html
+size: small
+
+-- end: demo
+
+-- demo: Large size buttons
+
+-- button: TEXT
+variant: text
+link: index.html
+size: large
+
+-- button: Contained
+variant: contained
+link: index.html
+size: large
+
+-- button: Outlined
+variant: outlined
+link: index.html
+size: large
 
 -- end: demo
 

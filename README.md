@@ -1,26 +1,31 @@
+# fastn-button
+
+fastn buttons are developed using [fastn language](https://fastn.com/). To achieve fastn champion badge I have developed these buttons taking UI inspiration from [Matrrial UI](https://mui.com/material-ui/react-button/).
+
 # Overview
 
-[doc-site](https://fastn-community.github.io/doc-site/) will help you create
-a beautiful documentation site in no time.
+Buttons allow users to take actions, and make choices, with a single tap.
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+Buttons communicate actions that users can take. They are typically placed
+throughout your UI, in places like:
+
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+These fastn buttons are inspired from [Matrrial UI](https://mui.com/material-ui/react-button/) and uses fastn typography and color tokens. 
+
 
 # Preview
 
-![doc-site](.github/assets/doc-site-example-dark.jpg)
+![fastn-buttons](.github/assets/fastn-button.png)
 
-## Get Rolling
 
-[Click here](https://fastn-community.github.io/doc-site/) to learn how to use this template.
+## fastn Champions program
 
-# [Dive into the Docs](https://fastn-community.github.io/doc-site/)
+[Click here](https://fastn.com/champion-program/) to learn how to became fastn champion.
 
-# See it in Action!
-
-Explore websites and projects that have utilized this component/template 
-**[here](https://fastn-community.github.io/doc-site/#dart-used-by)** for
-inspiration.
 
 ## fastn and Curious?
 
