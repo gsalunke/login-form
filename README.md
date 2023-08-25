@@ -21,9 +21,9 @@ These fastn buttons are inspired from [Matrrial UI](https://mui.com/material-ui/
 
 ![fastn-buttons](.github/assets/fastn-button.png)
 
-### Like my work? connect with me on [Linkedin](https://www.linkedin.com/in/ganesh-s-891174ab/)
-
-## Follow me? [Linkedin](https://www.linkedin.com/in/ganesh-s-891174ab/)
+## Liked my work? 
+- Give me a star on GitHub
+- Connect with me on [Linkedin](https://www.linkedin.com/in/ganesh-s-891174ab/)
 
 ## fastn Champions program
 
